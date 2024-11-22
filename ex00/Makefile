@@ -6,7 +6,7 @@
 #    By: senayat <senayat@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/16 22:45:48 by senayat           #+#    #+#              #
-#    Updated: 2024/11/22 11:43:12 by senayat          ###   ########.fr        #
+#    Updated: 2024/11/22 12:10:08 by senayat          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,7 @@ $(NAME):	$(OBJ)
 			@$(CPPC) $(FLAGS) $(OBJ) -o $(NAME)
 
 clean:
-			@printf "Removing all object files\n"
+			@printf "Removing all object files: %s\n" $(OBJ)
 			@$(RM) $(OBJ)
 			@$(RMDIR) $(OBJ_DIR)
 
